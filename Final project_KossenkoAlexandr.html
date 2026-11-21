@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignStart — Основы дизайна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА И ПЕРВЫЙ ЭКРАН (Серый фон) -->
+    <div class="bg-gray">
+        <header class="container grid-12 header">
+            <a href="#" class="logo">DesignStart</a>
+            <nav class="nav">
+                <a href="#about">О курсе</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#apply">Поступление</a>
+            </nav>
+        </header>
+
+        <section class="container grid-12 hero">
+            <div class="hero-content">
+                <h1>ОСНОВЫ ДИЗАЙНА</h1>
+                <p>Узнайте, как создавать красивые и функциональные дизайны</p>
+                <a href="#apply" class="btn-primary">Записаться на курс</a>
+            </div>
+            <div class="hero-image">
+                <!-- СЮДА ВСТАВИТЬ ГЛАВНУЮ ИЛЛЮСТРАЦИЮ (Монитор) -->
+                <img src="images/hero-monitor.svg" alt="Основы дизайна" width="294">
+            </div>
+        </section>
+    </div>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ (Белый фон) -->
+    <main class="bg-white">
+        
+        <!-- О КУРСЕ -->
+        <section id="about" class="container grid-12 about">
+            <div class="about-content">
+                <h2>О курсе</h2>
+                <p>Курс «Основы дизайна» создан для тех, кто хочет понять, как работает современный дизайн, и научиться применять эти знания на практике.</p>
+                <p>Вы познакомитесь с базовыми принципами композиции, типографики и работы с цветом.</p>
+            </div>
+            <div class="about-image">
+                <!-- СЮДА ВСТАВИТЬ ИЛЛЮСТРАЦИЮ ИЗ БЛОКА "О КУРСЕ" (Карточка с макетом) -->
+                <img src="images/about-card.svg" alt="О курсе" width="284">
+            </div>
+        </section>
+
+        <!-- ПРЕИМУЩЕСТВА -->
+        <section id="benefits" class="container grid-12 benefits">
+            <h2 class="section-title">Преимущества</h2>
+            
+            <!-- Карточка 1 (занимает 3 колонки) -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <!-- СЮДА ВСТАВИТЬ ИКОНКУ 1 (Книга) -->
+                    <img src="icons/book.svg" alt="Много практики">
+                </div>
+                <p>Много<br>практики</p>
+            </div>
+
+            <!-- Карточка 2 (занимает 3 колонки) -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <!-- СЮДА ВСТАВИТЬ ИКОНКУ 2 (Связь с учителями) -->
+                    <img src="icons/teacher.svg" alt="Связь с учителями">
+                </div>
+                <p>Связь c<br>учителями</p>
+            </div>
+
+            <!-- Карточка 3 (занимает 3 колонки) -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <!-- СЮДА ВСТАВИТЬ ИКОНКУ 3 (Портфолио) -->
+                    <img src="icons/portfolio.svg" alt="Создание Портфолио">
+                </div>
+                <p>Создание Портфолио</p>
+            </div>
+
+            <!-- Карточка 4 (занимает 3 колонки) -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <!-- СЮДА ВСТАВИТЬ ИКОНКУ 4 (Портфель) -->
+                    <img src="icons/job.svg" alt="Трудо устройство">
+                </div>
+                <p>Трудо<br>устройство</p>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ СТУДЕНТОВ -->
+        <section id="reviews" class="container grid-12 reviews">
+            <h2 class="section-title">Отзывы студентов</h2>
+
+            <!-- Отзыв 1 (занимает 4 колонки) -->
+            <article class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <!-- СЮДА ВСТАВИТЬ ИКОНКУ АВАТАРА -->
+                        <img src="icons/user.svg" alt="Аватар" width="170">
+                    </div>
+                    <div class="review-author">
+                        <h3>Стас Васильев</h3>
+                        <span class="author-line"></span>
+                    </div>
+                </div>
+                <p class="review-text">Курс точно стоит своих денег! Заботливые преподаватели, а также много практики, дали мне кучу знаний о дизайне.</p>
+            </article>
+
+            <!-- Отзыв 2 (занимает 4 колонки) -->
+            <article class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <!-- СЮДА ВСТАВИТЬ ИКОНКУ АВАТАРА -->
+                        <img src="icons/user.svg" alt="Аватар">
+                    </div>
+                    <div class="review-author">
+                        <h3>Иван Смирнов</h3>
+                        <span class="author-line"></span>
+                    </div>
+                </div>
+                <p class="review-text">На курсе я познакомился с кучей интересных личностей и подтянул свои знание в веб-дизайне, рекомендую!</p>
+            </article>
+
+            <!-- Отзыв 3 (занимает 4 колонки) -->
+            <article class="review-card">
+                <div class="review-header">
+                    <div class="avatar">
+                        <!-- СЮДА ВСТАВИТЬ ИКОНКУ АВАТАРА -->
+                        <img src="icons/user.svg" alt="Аватар">
+                    </div>
+                    <div class="review-author">
+                        <h3>Артем Кузнецов</h3>
+                        <span class="author-line"></span>
+                    </div>
+                </div>
+                <p class="review-text">Курс помог мне разобраться каким я все таки дизайнером хочу быть, а также узнал кучу нового об скетчинге.</p>
+            </article>
+        </section>
+
+        <!-- ФОРМА ЗАЯВКИ -->
+        <section id="apply" class="container apply">
+            <h2 class="section-title">Готовы поступить?</h2>
+            <form class="grid-12 apply-form" action="#">
+                <input type="text" class="input-name" placeholder="Имя" required>
+                <input type="email" class="input-email" placeholder="E-mail" required>
+                <button type="submit" class="btn-submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ (Серый фон) -->
+    <footer class="bg-gray footer">
+        <div class="container grid-12 footer-columns">
+            <div class="footer-col">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#about">О курсе</a></li>
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#reviews">Отзывы студентов</a></li>
+                    <li><a href="#apply">Записаться на курс</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><a href="#">Email: hello@designcourse.ru</a></li>
+                    <li><a href="#">Telegram: @designcourse</a></li>
+                    <li><a href="#">Сайт: designcourse.ru</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            <p>© 2025 Онлайн-курс «Основы дизайна». Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
